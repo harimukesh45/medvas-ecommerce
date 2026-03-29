@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Premium Copper & Slate Palette */
+  --navy-dark: #0F172A;      /* Deep Slate for Footer & Hero */
+  --accent-vibrant: #B87354; /* Beautiful Copper/Rose Gold matching Logo */
+  --accent-hover: #91573D;   /* Darker Copper for button hovers */
+  
+  --bg-main: #F8FAFC;        /* Clean Off-White */
+  --surface: #FFFFFF;
+  --text-main: #334155;
+  --text-muted: #64748B;
+  --border-color: #E2E8F0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; width: 100%; }
+.page-wrapper { min-height: 70vh; padding: 40px 0; flex: 1; }
+
+h1, h2, h3 { color: var(--navy-dark); font-weight: 800; }
+.text-accent { color: var(--accent-vibrant); }
+
+/* Copper Buttons */
+.btn-primary {
+  background-color: var(--accent-vibrant);
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 4px 14px rgba(184, 115, 84, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(184, 115, 84, 0.4);
+}
+
+/* Cards & Layout */
+.card {
+  background: var(--surface);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  transition: transform 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+.card:hover { transform: translateY(-5px); }
+
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  .desktop-nav { display: none !important; }
+  .mobile-menu-btn { display: block !important; }
+  .hero-slideshow { height: 400px !important; }
+  .hero-title { font-size: 2.2rem !important; }
+  .hero-desc { font-size: 1rem !important; }
+  
+  .product-detail-layout { flex-direction: column !important; gap: 20px !important; }
+  .product-image-container, .product-details-container { min-width: 100% !important; flex: none !important; }
+  .footer-grid { grid-template-columns: 1fr !important; gap: 30px !important; text-align: center; }
+  .footer-contact { align-items: center !important; }
+
+  /* --- NEW & UPDATED MOBILE RULES --- */
+  
+  .about-layout {
+    flex-direction: column-reverse !important; /* Forces the order: Logo above Text on mobile */
+  }
+
+  .about-text {
+    padding-right: 0 !important;
+    margin-bottom: 0 !important; /* Removed to rely on parent container gap for clean spacing */
+  }
+}
