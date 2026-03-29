@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Products from './pages/Products';
 import ProductDetail from './pages/ProductDetail';
+import FloatingWhatsApp from './components/FloatingWhatsapp';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <FloatingWhatsApp />
       </div>
     </Router>
   );
