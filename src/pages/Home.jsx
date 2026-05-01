@@ -49,19 +49,19 @@ function Home() {
           {featuredProducts.map(product => (
             <div key={product.id} className="card" style={{ display: 'flex', flexDirection: 'column' }}>
               <div style={{ width: '100%', height: '220px', backgroundColor: '#E2E8F0', borderRadius: '8px', marginBottom: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
-                 <img src={product.images[0]} alt={product.name} style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.5 }} />
+                <img src={product.images[0]} alt={product.name} style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 1 }} />
               </div>
               <h3 style={{ fontSize: '1.3rem', marginBottom: '10px' }}>{product.name}</h3>
               <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', marginBottom: '20px', flexGrow: 1 }}>{product.description}</p>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <span style={{ fontWeight: '800', color: 'var(--navy-dark)', fontSize: '1.4rem' }}>₹{product.price}</span>
-                <Link to={`/products/${product.id}`}><button className="btn-primary" style={{ padding: '8px 16px', fontSize: '0.9rem' }}>View Kit</button></Link>
+              <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
+                <Link to={`/products/${product.id}`}>
+                  <button className="btn-primary" style={{ padding: '8px 16px', fontSize: '0.9rem' }}>View Kit</button>
+                </Link>
               </div>
             </div>
           ))}
         </div>
 
-        {/* --- NEW ADDITION: View Catalog Button --- */}
         <div style={{ textAlign: 'center', marginTop: '50px', marginBottom: '20px' }}>
           <Link to="/products">
             <button className="btn-primary" style={{ padding: '16px 36px', fontSize: '1.1rem' }}>
@@ -69,7 +69,6 @@ function Home() {
             </button>
           </Link>
         </div>
-
       </div>
     </div>
   );
