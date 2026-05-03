@@ -38,17 +38,18 @@ function Footer() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', color: '#94A3B8', fontSize: '0.95rem' }}>
             <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
               <Phone size={20} color="var(--accent-vibrant)" style={{ flexShrink: 0, marginTop: '2px' }} />
-              <span>+91 123 456 7890</span>
+              <span> 9360617191 9489461612</span>
             </div>
             
             <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
               <Mail size={20} color="var(--accent-vibrant)" style={{ flexShrink: 0, marginTop: '2px' }} />
-              <span>contact@medvasenterprises.com</span>
+              <span>medvasenterprises@gmail.com </span>
             </div>
 
             <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
               <MapPin size={20} color="var(--accent-vibrant)" style={{ flexShrink: 0, marginTop: '2px' }} />
-              <span>123 Medical Equipment Park,<br />Healthcare District, City 400001</span>
+              <span>34, Muthalali Veeriah street, Chockalingapuram, Aruppukottai-626101
+South India</span>
             </div>
           </div>
         </div>

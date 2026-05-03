@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { products } from '../data/products';
 
+
 function Products() {
   return (
     <div className="container">

@@ -2,7 +2,7 @@ import React from 'react';
 import { MessageCircle } from 'lucide-react';
 
 function FloatingWhatsApp() {
-  const phoneNumber = "9489461612"; // REPLACE WITH YOUR NUMBER
+  const phoneNumber = "9360617191"; // REPLACE WITH YOUR NUMBER
   const defaultMessage = "Hello MedVas Enterprises, I have a general inquiry.";
 
   const handleClick = () => {
