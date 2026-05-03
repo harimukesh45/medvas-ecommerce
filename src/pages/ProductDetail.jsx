@@ -21,7 +21,7 @@ function ProductDetail() {
       alert("Please fill in your Name and Delivery Address.");
       return;
     }
-    const phoneNumber = "9360617191"; // REPLACE WITH YOUR NUMBER
+    const phoneNumber = "919360617191"; // REPLACE WITH YOUR NUMBER
     const message = `Hello MEDVAS ENTERPRISES, I'd like to place an order.%0A%0A*Product:* ${product.name}%0A*Quantity:* ${quantity}%0A%0A*Customer Details:*%0AName: ${customerInfo.name}%0AAddress: ${customerInfo.address}`;
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };
