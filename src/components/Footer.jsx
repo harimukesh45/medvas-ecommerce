@@ -38,7 +38,7 @@ function Footer() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', color: '#94A3B8', fontSize: '0.95rem' }}>
             <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
               <Phone size={20} color="var(--accent-vibrant)" style={{ flexShrink: 0, marginTop: '2px' }} />
-              <span> +91 9360617191, +91 9489461612</span>
+              <span> +91 9360617191 , +91 9489461612</span>
             </div>
             
             <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
